@@ -34,4 +34,5 @@ fi
 wget https://raw.github.com/mac0ne/myconf/master/.vimrc
 
 #install chrome
-curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb| dpkg -i
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
