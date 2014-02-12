@@ -16,7 +16,15 @@ openssh-server
 PACKAGES
 
 #setup oh-my-zsh and import personal conf
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cd ~
+if [ -f .zshrc ] || [ -h ~/.zshrc ]
+then
+  mv ~/.zshrc ~/.zshrc.bak
+fi
+wget https://raw.github.com/mac0ne/myconf/master/.zshrc
+
+chsh -s `which zsh`
 
 
 #install chrome
