@@ -13,6 +13,7 @@ iftop
 gcc
 tree
 openssh-server
+guake
 PACKAGES
 
 #setup oh-my-zsh and import personal conf
