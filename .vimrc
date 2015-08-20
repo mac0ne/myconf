@@ -1,6 +1,5 @@
 set cindent
-colorscheme desert
-set number
+colorscheme candy
 set nocompatible
 filetype on
 set history=1000
@@ -16,6 +15,8 @@ set nohls
 set incsearch
 set showmatch
 set mouse=
+set hlsearch
+set nonumber
 
 if has("multi_byte")
     set encoding=utf-8
